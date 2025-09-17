@@ -16,6 +16,7 @@ let getComputerChoice = () => {
 
 };
 
+
 let getHumanChoice = () => {
     return userInput = prompt("rock paper scissors shoot! ");
 };
@@ -24,9 +25,6 @@ let getHumanChoice = () => {
 
 
 let playGame = () => {
-
-    let humanChoice = getHumanChoice();
-    let computerChoice = getComputerChoice();
     
     let playRound = (humanChoice, computerChoice) => {
         let humanChoiceLow = humanChoice.toLowerCase();
@@ -61,10 +59,9 @@ let playGame = () => {
     
     };
 
-
-    for (let i = 0; i++; i < 5) {
-        playRound(humanChoice, computerChoice);
-    }
+    let humanChoiceGenerated;
+    let computerChoiceGenerated;
+    
 
 
 };
